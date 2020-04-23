@@ -1,6 +1,6 @@
 def distance(strand_a, strand_b):
     if len(strand_a) != len(strand_b):
-        raise Exception("DNA are not of equal length")
+        raise ValueError("DNA not of equal length")
     
     hamming_distance = 0
     for i in range(len(strand_a)):
